@@ -12,7 +12,7 @@ import (
 	"github.com/spf13/viper"
 	"github.com/wagoodman/go-partybus"
 
-	"github.com/nextlinux/go-logger/adapter/logrus"
+	"github.com/nextlinux/gologger/adapter/logrus"
 	"github.com/nextlinux/govulners/govulners"
 	"github.com/nextlinux/govulners/internal/config"
 	"github.com/nextlinux/govulners/internal/log"

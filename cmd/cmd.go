@@ -12,7 +12,7 @@ import (
 	"github.com/spf13/viper"
 	"github.com/wagoodman/go-partybus"
 
-	"github.com/nextlinux/gologger/adapter/logrus"
+	"github.com/nextlinux/go-logger/adapter/logrus"
 	"github.com/nextlinux/govulners/govulners"
 	"github.com/nextlinux/govulners/internal/config"
 	"github.com/nextlinux/govulners/internal/log"
@@ -83,7 +83,7 @@ func initLogging() {
 		log.Error("unable to initialize logger: %+v", err)
 		return
 	}
-	grype.SetLogger(logWrapper)
+	govulners.SetLogger(logWrapper)
 	syft.SetLogger(logWrapper.Nested("from-lib", "syft"))
 	stereoscope.SetLogger(logWrapper.Nested("from-lib", "stereoscope"))
 }
@@ -94,7 +94,7 @@ func logAppConfig() {
 
 func logAppVersion() {
 	versionInfo := version.FromBuild()
-	log.Infof("grype version: %s", versionInfo.Version)
+	log.Infof("govulners version: %s", versionInfo.Version)
 
 	var fields map[string]interface{}
 	bytes, err := json.Marshal(versionInfo)
@@ -128,5 +128,5 @@ func initEventBus() {
 
 	stereoscope.SetBus(eventBus)
 	syft.SetBus(eventBus)
-	grype.SetBus(eventBus)
+	govulners.SetBus(eventBus)
 }

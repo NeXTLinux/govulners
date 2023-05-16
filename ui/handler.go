@@ -7,8 +7,8 @@ import (
 	"github.com/wagoodman/go-partybus"
 	"github.com/wagoodman/jotframe/pkg/frame"
 
-	govulnersEvent "github.com/nextlinux/govulners/govulners/event"
 	syftUI "github.com/anchore/syft/ui"
+	govulnersEvent "github.com/nextlinux/govulners/govulners/event"
 )
 
 type Handler struct {

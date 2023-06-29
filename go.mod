@@ -6,7 +6,7 @@ require (
 	github.com/CycloneDX/cyclonedx-go v0.7.1
 	github.com/Masterminds/sprig/v3 v3.2.3
 	github.com/adrg/xdg v0.4.0
-	github.com/anchore/syft v0.83.1
+	github.com/anchore/syft v0.84.1
 	github.com/bmatcuk/doublestar/v2 v2.0.4
 	github.com/docker/docker v24.0.2+incompatible
 	github.com/dustin/go-humanize v1.0.1
@@ -71,7 +71,7 @@ require (
 	github.com/anchore/go-macholibre v0.0.0-20220308212642-53e6d0aaf6fb // indirect
 	github.com/anchore/go-struct-converter v0.0.0-20221118182256-c68fdcfa2092 // indirect
 	github.com/anchore/packageurl-go v0.1.1-0.20230104203445-02e0a6721501 // indirect
-	github.com/anchore/stereoscope v0.0.0-20230609190519-5b5049bf4d3a // indirect
+	github.com/anchore/stereoscope v0.0.0-20230627195312-cd49355d934e // indirect
 	github.com/andybalholm/brotli v1.0.4 // indirect
 	github.com/aws/aws-sdk-go v1.44.122 // indirect
 	github.com/becheran/wildmatch-go v1.0.0 // indirect
@@ -167,7 +167,7 @@ require (
 	go.opencensus.io v0.24.0 // indirect
 	golang.org/x/crypto v0.10.0 // indirect
 	golang.org/x/exp v0.0.0-20230202163644-54bba9f4231b // indirect
-	golang.org/x/mod v0.10.0 // indirect
+	golang.org/x/mod v0.11.0 // indirect
 	golang.org/x/net v0.11.0 // indirect
 	golang.org/x/oauth2 v0.7.0 // indirect
 	golang.org/x/sync v0.1.0 // indirect
